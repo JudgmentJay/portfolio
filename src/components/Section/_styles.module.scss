@@ -1,0 +1,41 @@
+@use '../../scss/variables.scss' as *;
+
+.section:nth-child(odd) {
+	background: $almostWhite;
+}
+
+.container {
+	max-width: 1160px;
+	margin: 0 auto;
+	padding: $smallSpacing;
+}
+
+.sectionHeader {
+	margin-bottom: $smallSpacing;
+
+	font-family: $anton;
+	font-size: 4em;
+	font-weight: 400;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@media screen and (min-width: 520px) {
+	.container {
+		padding: $mediumSpacing;
+	}
+
+	.sectionHeader {
+		margin-bottom: $mediumSpacing;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.container {
+		padding: $largeSpacing;
+	}
+
+	.sectionHeader {
+		margin-bottom: $largeSpacing;
+	}
+}

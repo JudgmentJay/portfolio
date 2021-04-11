@@ -1,0 +1,8 @@
+@use '../../scss/variables' as *;
+
+.footer {
+	padding: $smallSpacing;
+
+	font-size: 1.6em;
+	text-align: center;
+}

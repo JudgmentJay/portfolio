@@ -1,0 +1,31 @@
+@use '../../scss/variables.scss' as *;
+
+.intro {
+	margin-bottom: $smallSpacing;
+
+	font-size: 1.6em;
+	text-align: center;
+	line-height: 1.5;
+
+	&--about {
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.intro {
+		margin-bottom: $mediumSpacing;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.intro {
+		margin-bottom: $largeSpacing;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.intro {
+		font-size: 2em;
+	}
+}

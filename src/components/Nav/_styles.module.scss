@@ -1,0 +1,42 @@
+@use '../../scss/variables.scss' as *;
+
+.nav {
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+
+	color: $white;
+	font-family: $raleway;
+	font-size: 1.6em;
+	text-transform: lowercase;
+
+	background: $darkGrey;
+}
+
+.link {
+	display: inline-block;
+
+	padding: $smallSpacing $tinySpacing;
+}
+
+@media screen and (min-width: 520px) {
+	.nav {
+		font-size: 1.8em;
+	}
+
+	.link {
+		padding: $smallSpacing;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.nav {
+		font-size: 3em;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.nav {
+		font-size: 3.6em;
+	}
+}

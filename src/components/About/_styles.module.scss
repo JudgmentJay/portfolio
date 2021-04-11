@@ -1,0 +1,61 @@
+@use '../../scss/variables.scss' as *;
+
+.portrait {
+	margin-bottom: $smallSpacing;
+}
+
+.contactInfo {
+	display: flex;
+	flex-direction: column;
+}
+
+.contactLink {
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 15px;
+
+	font-size: 1.6em;
+}
+
+.contactMethod {
+	margin-left: $tinySpacing;
+}
+
+.socialIcon {
+	display: inline-block;
+	width: 35px;
+	margin-right: $tinySpacing;
+}
+
+@media screen and (min-width: 520px) {
+	.content {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.portrait {
+		position: relative;
+		top: 6px;
+
+		flex: 0 0 calc((100% / 3) - #{$mediumSpacing});
+		margin-right: $mediumSpacing;
+	}
+
+	.intro {
+		flex: 0 0 calc(100% * (2/3));
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.portrait {
+		top: 8px;
+
+		flex: 0 0 calc((100% / 3) - #{$largeSpacing});
+		margin-right: $largeSpacing;
+	}
+
+	.contactLink {
+		font-size: 2em;
+	}
+}

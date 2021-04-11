@@ -1,0 +1,59 @@
+@use '../../scss/variables.scss' as *;
+
+.primarySkills, .secondarySkills {
+	margin-bottom: $smallSpacing;
+}
+
+.header {
+	margin-bottom: $smallSpacing;
+
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.strengths ul {
+	margin-left: 18px;
+
+	font-size: 1.6em;
+
+	list-style: square;
+
+	li {
+		margin-bottom: 15px;
+
+		line-height: 1.25;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.primarySkills, .secondarySkills {
+		margin-bottom: $mediumSpacing;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.primarySkills {
+		margin-bottom: $largeSpacing;
+	}
+
+	.extras {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.secondarySkills, .strengths {
+		flex-basis: calc(50% - (#{$largeSpacing} / 2));
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.strengths ul li {
+		line-height: 1;
+	} 
+}

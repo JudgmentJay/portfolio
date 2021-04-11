@@ -1,0 +1,86 @@
+@use '../../scss/variables.scss' as *;
+
+.headers {
+	display: inline-block;
+	width: 100%;
+	margin: $smallSpacing 0 $tinySpacing 0;
+	padding: $smallSpacing;
+
+	background: $white;
+}
+
+.header {
+	margin-bottom: $tinySpacing;
+
+	font-family: $oswald;
+	font-size: 4em;
+	font-weight: 700;
+	color: $darkGrey;
+	letter-spacing: -2px;
+}
+
+.subheader {
+	position: relative;
+
+	display: inline;
+
+	font-family: $raleway;
+	font-size: 3em;
+	color: $darkGrey;
+	letter-spacing: 2px;
+	text-transform: lowercase;
+
+	&:before {
+		content: '{ ';
+		display: inline;
+	}
+
+	&:after {
+		content: ' }';
+		display: inline;
+	}
+}
+
+@media screen and (min-width: 520px) {
+	.headers {
+		margin-top: $mediumSpacing;
+	}
+
+	.header {
+		font-size: 5em;
+	}
+
+	.subheader {
+		font-size: 3.6em;
+		letter-spacing: 3px;
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.headers {
+		margin-top: $largeSpacing;
+	}
+
+	.header {
+		margin-bottom: $smallSpacing;
+
+		font-size: 10em;
+		letter-spacing: -5px;
+	}
+
+	.subheader {
+		font-size: 5em;
+		letter-spacing: 5px;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.header {
+		font-size: 12em;
+		letter-spacing: -6px;
+	}
+
+	.subheader {
+		font-size: 6em;
+	}
+}

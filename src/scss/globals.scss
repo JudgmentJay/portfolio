@@ -1,0 +1,58 @@
+@use './variables.scss' as *;
+
+@import url('https://fonts.googleapis.com/css?family=Anton|Open+Sans|Oswald:700|Raleway&display=swap');
+@import url('./reset.scss');
+
+html {
+	scroll-behavior: smooth;
+
+	header {
+		background: url(../img/hero_m.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	&.webp {
+		header {
+			background: url(../img/hero_m.webp) center center no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+body {
+	background-color: $white;
+
+	font-family: $sans;
+}
+
+@media screen and (min-width: 520px) {
+	html {
+		header {
+			background: url(../img/hero_t.jpg) center center no-repeat;
+			background-size: cover;
+		}
+
+		&.webp {
+			header {
+				background: url(../img/hero_t.webp) center center no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 740px) {
+	html {
+		header {
+			background: url(../img/hero.jpg) center center no-repeat;
+			background-size: cover;
+		}
+
+		&.webp {
+			header {
+				background: url(../img/hero.webp) center center no-repeat;
+				background-size: cover;
+			}
+		}
+	}
+}

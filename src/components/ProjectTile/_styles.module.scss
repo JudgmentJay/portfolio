@@ -1,0 +1,68 @@
+@use '../../scss/variables.scss' as *;
+
+.tile {
+	position: relative;
+
+	margin-bottom: $smallSpacing;
+
+	text-align: center;
+
+	background: $white;
+	border: 1px solid $offWhite;
+	box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.image, .title {
+	position: relative;
+	z-index: 0;
+}
+
+.image {
+	width: 100%;
+}
+
+.title {
+	padding: 12px $tinySpacing;
+
+	font-size: 1.6em;
+	font-weight: 600;
+}
+
+.link {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+
+	height: 100%;
+	width: 100%;
+}
+
+@media screen and (min-width: 520px) {
+	.tile {
+		flex-basis: calc(50% - (#{$smallSpacing}/2));
+	}
+}
+
+@media screen and (min-width: 740px) {
+	.tile {
+		flex-basis: calc((100% / 3) - (#{$smallSpacing}/2));
+		margin-bottom: 0;
+
+		transition: all 0.2s ease;
+
+		&:hover {
+			transform: translateY(-10px) rotate(0.02deg);
+
+			box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+		}
+	}
+
+	.title {
+		padding: $smallSpacing 10px;
+	}
+}
