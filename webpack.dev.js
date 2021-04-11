@@ -15,12 +15,5 @@ module.exports = merge(common, {
 			}
 		]
 	},
-	mode: 'development',
-	/* Comment out devServer if you don't need to proxy */
-	devServer: {
-		proxy: [{
-			context: ['/proxy', '/bookmarks'],
-			target: 'http://localhost:3010',
-		}]
-	}
+	mode: 'development'
 })
