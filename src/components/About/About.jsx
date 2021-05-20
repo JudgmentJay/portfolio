@@ -24,7 +24,7 @@ const About = () => {
 						widths={[460, 190, 320]} />
 				</div>
 				<div className={styles.intro}>
-					<Intro modifier="about">I am a web-based software engineer with over {yearsOfExperience} years professional experience and a passion for efficient, modular, and reusable code. I enjoy creating rich user experiences using modern web technologies such as HTML, S/CSS, JavaScript, and React. I also have back-end experience using Node.js, Express.js, Next.js, GraphQL, and SQL/SQLite. I&apos;m highly organized with an eye for user experience and an obsessive attention to detail.</Intro>
+					<Intro modifier="about">I am a web-based software engineer with over {yearsOfExperience} years professional experience and I have a passion for efficient, modular, reusable code. I enjoy creating rich user experiences using modern web technologies such as HTML, CSS/SASS, JavaScript, and React. I also have experience using Node.js, Express.js, Next.js, GraphQL, SQL/SQLite, and MongoDB. I&apos;m highly organized with an eye for user experience and an obsessive attention to detail.</Intro>
 					<div className={styles.contactInfo}>
 						<a href="tel:3619450085" className={styles.contactLink}>
 							<Picture
