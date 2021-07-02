@@ -38,14 +38,14 @@ module.exports = [
 		title: 'Software Engineer II',
 		company: 'Saatva',
 		description: 'Full stack work on large e-commerce platforms. HTML, SASS, JavaScript, React, Node.js, Express.js, PHP, GraphQL, SQL.',
-		date: 'November 2018–June 2021',
+		date: 'November 2018–December 2020',
 		img: 'job_saatva'
 	},
 	{
 		title: 'Tech Lead / Senior Software Engineer',
 		company: 'Saatva',
 		description: 'Tech lead + full stack work on large e-commerce platforms. HTML, SASS, JavaScript, React, Node.js, Express.js, Next.js, GraphQL.',
-		date: 'July 2021–Present',
+		date: 'December 2020–Present',
 		img: 'job_saatva_2'
 	}
 ]
