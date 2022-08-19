@@ -51,7 +51,7 @@ module.exports = [
 	{
 		title: 'Senior Software Engineer',
 		company: 'WorkBoard',
-		description: 'Full-stack work on a SaaS platform focused on helping companies manage OKRs. HTML, SASS, JavaScript, React, Node.js',
+		description: 'Full-stack work on a SaaS platform focused on helping companies manage OKRs. HTML, SASS, JavaScript, React, Node.js.',
 		date: 'January 2022–Present',
 		img: 'job_workboard'
 	}

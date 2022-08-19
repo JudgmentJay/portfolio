@@ -48,7 +48,7 @@
 	.heroContent {
 		display: inline-flex;
 		flex-direction: column;
-		width: 410px;
+		width: 450px;
 	}
 }
 
@@ -68,12 +68,12 @@
 	}
 
 	.heroContent {
-		width: 575px;
+		width: 625px;
 	}
 }
 
 @media screen and (min-width: 1000px) {
 	.heroContent {
-		width: 660px;
+		width: 720px;
 	}
 }
