@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
 require.context('./img', true, /\.(jpe?g|png|gif|svg|webp)$/)
 
@@ -15,16 +15,20 @@ import {
 } from './components'
 
 const Portfolio = () => {
+	const now = new Date()
+
 	return (
 		<React.Fragment>
 			<Hero />
-			<About />
+			<About date={now} />
 			<Experience />
 			<Skills />
 			<Projects />
-			<Footer />
+			<Footer date={now} />
 		</React.Fragment>
 	)
 }
 
-ReactDOM.render(<Portfolio />, document.getElementById('portfolio'))
+const container = document.getElementById('portfolio')
+const root = createRoot(container)
+root.render(<Portfolio />)

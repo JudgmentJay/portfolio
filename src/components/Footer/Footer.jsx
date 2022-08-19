@@ -1,10 +1,10 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './_styles.module.scss'
 
-const Footer = () => {
-	const now = new Date()
-	const currentYear = now.getFullYear()
+const Footer = ({ date }) => {
+	const currentYear = date.getFullYear()
 
 	return (
 		<React.Fragment>
@@ -14,6 +14,10 @@ const Footer = () => {
 			<script type="text/javascript" src={require('../../scripts/modernizr-custom')}></script>
 		</React.Fragment>
 	)
+}
+
+Footer.propTypes = {
+	date: PropTypes.object.isRequired
 }
 
 export default Footer

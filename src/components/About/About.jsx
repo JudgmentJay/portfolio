@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import {
 	Intro,
@@ -8,10 +9,9 @@ import {
 
 import styles from './_styles.module.scss'
 
-const About = () => {
-	const startDate = new Date('May 12, 2008 09:00:00')
-	const now = new Date()
-	const millisecondsOfExperience = now - startDate
+const About = ({ date }) => {
+	const startDate = new Date(new Date('May 12, 2008 09:00:00').toLocaleString('en-US', { timeZone: 'America/Chicago' }))
+	const millisecondsOfExperience = date - startDate
 	const yearsOfExperience = Math.floor(millisecondsOfExperience / 1000 / 60 / 60 / 24 / 365)
 
 	return (
@@ -63,6 +63,10 @@ const About = () => {
 			</div>
 		</Section>
 	)
+}
+
+About.propTypes = {
+	date: PropTypes.object.isRequired
 }
 
 export default About
