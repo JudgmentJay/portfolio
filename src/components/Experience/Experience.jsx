@@ -22,7 +22,8 @@ const Experience = () => {
 								title={job.title}
 								company={job.company}
 								description={job.description}
-								date={job.date}
+								startDate={job.startDate}
+								endDate={job.endDate}
 								img={job.img}
 								odd={i % 2 !== 0}
 								key={`job-${i}`} />

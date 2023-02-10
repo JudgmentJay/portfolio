@@ -11,7 +11,8 @@ const Job = ({
 	title,
 	company,
 	description,
-	date,
+	startDate,
+	endDate,
 	img,
 	odd
 }) => {
@@ -40,7 +41,7 @@ const Job = ({
 						lazyLoad={true} />
 				</div>
 				<div className={styles.content}>
-					<span className={styles.date}>{date}</span>
+					<span className={styles.date}>{startDate}&ndash;{endDate}</span>
 					<h4 className={styles.title}>{title}</h4>
 					<h5 className={styles.subtitle}>{company}</h5>
 					<p className={styles.description}>{description}</p>
@@ -54,7 +55,8 @@ Job.propTypes = {
 	title: PropTypes.string.isRequired,
 	company: PropTypes.string.isRequired,
 	description: PropTypes.string.isRequired,
-	date: PropTypes.string.isRequired,
+	startDate: PropTypes.string.isRequired,
+	endDate: PropTypes.string.isRequired,
 	img: PropTypes.string.isRequired,
 	odd: PropTypes.bool
 }
