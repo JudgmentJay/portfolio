@@ -1,21 +1,5 @@
 module.exports = [
 	{
-		title: 'Intern',
-		company: 'Redline Technology',
-		description: 'Internship that included miscellaneous webpage design and development work. HTML, CSS, PHP, JavaScript, MySQL database management.',
-		startDate: 'January 2008',
-		endDate: 'May 2008',
-		img: 'job_redline'
-	},
-	{
-		title: 'Freelance Designer',
-		company: 'LevelTen Design',
-		description: 'Freelance work creating wireframes and mockups.',
-		startDate: 'April 2008',
-		endDate: 'May 2008',
-		img: 'job_levelten'
-	},
-	{
 		title: 'Web Developer',
 		company: 'USDM.net',
 		description: 'Building and maintaining large-scale websites and media/email campaign development. HTML, CSS, responsive website/email development, jQuery.',
@@ -58,9 +42,17 @@ module.exports = [
 	{
 		title: 'Senior Software Engineer',
 		company: 'WorkBoard',
-		description: 'Full-stack work on a SaaS platform focused on helping companies manage OKRs. HTML, SASS, JavaScript, React, Node.js.',
+		description: 'Full-stack work on a SaaS platform focused on helping companies manage objectives and key results. HTML, SASS, JavaScript, TypeScript, React, Node.js.',
 		startDate: 'January 2022',
 		endDate: 'February 2023',
 		img: 'job_workboard'
+	},
+	{
+		title: 'Senior Software Engineer',
+		company: 'Southwest Airlines',
+		description: 'Frontend-focused work for Southwest Airlines. HTML, SASS, JavaScript, TypeScript, React.',
+		startDate: 'July 2023',
+		endDate: 'Present',
+		img: 'job_southwest'
 	}
 ]
