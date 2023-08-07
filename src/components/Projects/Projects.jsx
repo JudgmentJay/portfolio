@@ -22,6 +22,7 @@ const Projects = () => {
 								title={project.title}
 								url={project.url}
 								imgName={project.imgName}
+								testId={`project-${i}`}
 								key={`project-${i}`} />
 						)
 					})

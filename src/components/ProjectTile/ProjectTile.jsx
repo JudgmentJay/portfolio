@@ -8,10 +8,11 @@ import styles from './_styles.module.scss'
 const ProjectTile = ({
 	title,
 	url,
-	imgName
+	imgName,
+	testId
 }) => {
 	return (
-		<div className={styles.tile}>
+		<div className={styles.tile} data-testid={testId}>
 			<Picture
 				imgName={imgName}
 				alt={title}
@@ -27,7 +28,8 @@ const ProjectTile = ({
 ProjectTile.propTypes = {
 	title: PropTypes.string.isRequired,
 	url: PropTypes.string.isRequired,
-	imgName: PropTypes.string.isRequired
+	imgName: PropTypes.string.isRequired,
+	testId: PropTypes.string.isRequired
 }
 
 export default ProjectTile

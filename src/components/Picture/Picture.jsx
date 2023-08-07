@@ -61,7 +61,7 @@ const Picture = ({
 
 Picture.propTypes = {
 	imgName: PropTypes.string.isRequired,
-	fileType: PropTypes.string,
+	fileType: PropTypes.string.isRequired,
 	alt: PropTypes.string.isRequired,
 	widths: PropTypes.array.isRequired,
 	lazyLoad: PropTypes.bool,

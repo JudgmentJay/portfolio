@@ -3,7 +3,7 @@ module.exports = [
 		title: 'Game Logging App',
 		url: 'https://www.jayposten.com/vidya',
 		imgName: 'project_vidya',
-		tech: 'HTML, SCSS, JavaScript, React, Node.js, Express.js, SQLite'
+		tech: 'HTML, SCSS, JavaScript, React, Node, Express, SQLite'
 	},
 	{
 		title: 'Flickr Image Gallery',
@@ -15,6 +15,6 @@ module.exports = [
 		title: 'Saatva.com',
 		url: 'https://www.saatva.com/',
 		imgName: 'project_saatva',
-		tech: 'HTML, SCSS, JavaScript, React, Node.js, Express.js, Next.js, GraphQL, SQL'
+		tech: 'HTML, SCSS, JavaScript, React, Node, Express, Next, GraphQL, SQL'
 	}
 ]

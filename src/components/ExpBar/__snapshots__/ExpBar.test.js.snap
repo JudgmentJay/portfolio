@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<div
+  className="skill"
+>
+  <span
+    className="skillName skillName--small"
+  >
+    react
+  </span>
+  <div
+    className="bar"
+  >
+    <div
+      className="fill"
+      style={
+        {
+          "width": "25%",
+        }
+      }
+    >
+      85
+      %
+    </div>
+  </div>
+</div>
+`;

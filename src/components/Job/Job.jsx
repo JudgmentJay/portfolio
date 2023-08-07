@@ -14,6 +14,7 @@ const Job = ({
 	startDate,
 	endDate,
 	img,
+	testId,
 	odd
 }) => {
 	const { ref, inView } = useInView({
@@ -31,7 +32,7 @@ const Job = ({
 	})
 
 	return (
-		<div className={jobContainerClasses}>
+		<div className={jobContainerClasses} data-testid={testId}>
 			<div className={jobClasses} ref={ref}>
 				<div className={styles.imgContainer}>
 					<Picture
@@ -58,6 +59,7 @@ Job.propTypes = {
 	startDate: PropTypes.string.isRequired,
 	endDate: PropTypes.string.isRequired,
 	img: PropTypes.string.isRequired,
+	testId: PropTypes.string.isRequired,
 	odd: PropTypes.bool
 }
 

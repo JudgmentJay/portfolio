@@ -25,6 +25,7 @@ const Experience = () => {
 								startDate={job.startDate}
 								endDate={job.endDate}
 								img={job.img}
+								testId={`job-${i}`}
 								odd={i % 2 !== 0}
 								key={`job-${i}`} />
 						)

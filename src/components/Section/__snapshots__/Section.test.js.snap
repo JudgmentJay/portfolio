@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders correctly 1`] = `
+<section
+  className="section"
+  id="mockId"
+>
+  <div
+    className="container"
+  >
+    <h3
+      className="sectionHeader"
+    >
+      Mock Header
+    </h3>
+    <div>
+      This is a test section
+    </div>
+  </div>
+</section>
+`;
