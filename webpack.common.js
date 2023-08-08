@@ -6,7 +6,8 @@ module.exports = {
 	output: {
 		path: path.resolve(__dirname, 'public'),
 		filename: 'index_bundle.js',
-		assetModuleFilename: 'img/[name][ext]'
+		assetModuleFilename: 'img/[name][ext]',
+		clean: true
 	},
 	target: 'web',
 	module: {
