@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { Picture } from '../../components'
 
-import styles from './_styles.module.scss'
+import * as styles from './_styles.module.scss'
 
 const ProjectTile = ({
 	title,

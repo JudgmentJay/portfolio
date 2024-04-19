@@ -1,7 +1,6 @@
 const { merge } = require('webpack-merge')
 const common = require('./webpack.common.js')
 
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
@@ -30,12 +29,13 @@ const cssModuleLoader = {
 	loader: 'css-loader',
 	options: {
 		modules: {
-			localIdentName: '[local]__[hash:base64:5]',
+			localIdentName: '[hash:base64]',
 		},
 	}
 }
 
 module.exports = merge(common, {
+	mode: 'production',
 	module: {
 		rules: [
 			{
@@ -61,7 +61,6 @@ module.exports = merge(common, {
 			}
 		]
 	},
-	mode: 'production',
 	optimization: {
 		minimizer: [
 			new TerserPlugin({
@@ -74,7 +73,6 @@ module.exports = merge(common, {
 		new MiniCssExtractPlugin({
 			filename: 'css/[name].[fullhash].css',
 			chunkFilename: 'css/[id].[fullhash].css'
-		}),
-		new CleanWebpackPlugin()
+		})
 	]
 })

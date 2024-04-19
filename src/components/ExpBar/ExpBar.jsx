@@ -3,7 +3,7 @@ import { useInView } from 'react-intersection-observer'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import styles from './_styles.module.scss'
+import * as styles from './_styles.module.scss'
 
 const ExpBar = ({
 	skill,

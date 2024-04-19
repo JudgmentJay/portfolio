@@ -7,7 +7,7 @@ import {
 	Section
 } from '../../components'
 
-import styles from './_styles.module.scss'
+import * as styles from './_styles.module.scss'
 
 const About = ({ date }) => {
 	const startDate = new Date(new Date('May 12, 2008 09:00:00').toLocaleString('en-US', { timeZone: 'America/Chicago' }))
@@ -42,7 +42,7 @@ const About = ({ date }) => {
 								widths={[21]} />
 							<span className={styles.contactMethod}>jdposten@gmail.com</span>
 						</a>
-						<div className={styles.socialIcons}>
+						<div>
 							<a href="https://github.com/JudgmentJay" target="_blank" rel="noreferrer noopener" className={styles.socialIcon}>
 								<Picture
 									imgName="icon_github"

@@ -5,7 +5,7 @@ import classNames from 'classnames'
 
 import { Picture } from '../../components'
 
-import styles from './_styles.module.scss'
+import * as styles from './_styles.module.scss'
 
 const Job = ({
 	title,
