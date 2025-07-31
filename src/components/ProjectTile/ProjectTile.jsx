@@ -7,6 +7,7 @@ import * as styles from './_styles.module.scss'
 
 const ProjectTile = ({
 	title,
+	tech,
 	url,
 	imgName,
 	testId
@@ -19,7 +20,10 @@ const ProjectTile = ({
 				widths={[460, 210, 348]}
 				lazyLoad={true}
 				className={styles.image} />
-			<h4 className={styles.title}>{title}</h4>
+			<div className={styles.content}>
+				<h4 className={styles.title}>{title}</h4>
+				<p className={styles.tech}>{tech}</p>
+			</div>
 			<a href={url} target="_blank" aria-label={title} rel="noreferrer noopener nofollow" className={styles.link}></a>
 		</div>
 	)
@@ -27,6 +31,7 @@ const ProjectTile = ({
 
 ProjectTile.propTypes = {
 	title: PropTypes.string.isRequired,
+	tech: PropTypes.string.isRequired,
 	url: PropTypes.string.isRequired,
 	imgName: PropTypes.string.isRequired,
 	testId: PropTypes.string.isRequired

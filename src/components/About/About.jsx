@@ -24,7 +24,7 @@ const About = ({ date }) => {
 						widths={[460, 190, 320]} />
 				</div>
 				<div className={styles.intro}>
-					<Intro modifier="about">I am a senior software engineer with over {yearsOfExperience} years professional experience and I have a passion for efficient, modular, reusable code. I enjoy creating rich user experiences using modern web technologies such as HTML, CSS/SASS, JavaScript, and React. On the backend I have experience with Node, Express, Next, GraphQL, SQL/SQLite, and MongoDB. I&apos;m highly organized with an eye for user experience and an obsessive attention to detail.</Intro>
+					<Intro modifier="about">I&apos;m a senior software engineer with over {yearsOfExperience} years of professional experience and I have a passion for efficient, modular, reusable code. I enjoy creating rich user experiences using modern web technologies such as HTML, CSS/SCSS, JavaScript, and React. On the backend I have experience with Node, Express.js, Next.js, GraphQL, SQL/SQLite, and MongoDB. For testing I&apos;m comfortable with Jest, Mocha, and Storybook. I&apos;m also comfortable with prompt engineering and have extensive experience with Amazon Q and Google&apos;s Gemini. I&apos;m highly organized with an eye for user experience and an obsessive attention to detail.</Intro>
 					<div className={styles.contactInfo}>
 						<a href="tel:3619450085" className={styles.contactLink}>
 							<Picture

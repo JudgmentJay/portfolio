@@ -25,11 +25,22 @@
 	width: 100%;
 }
 
+.content {
+	padding: $tinySpacing;
+}
+
 .title {
-	padding: 12px $tinySpacing;
+	margin-bottom: $tinySpacing;
 
 	font-size: 1.6em;
 	font-weight: 600;
+}
+
+.tech {
+	color: $grey;
+	font-size: 1.2em;
+	font-weight: 600;
+	line-height: 1.2;
 }
 
 .link {
@@ -62,7 +73,11 @@
 		}
 	}
 
+	.content {
+		padding: $smallSpacing;
+	}
+
 	.title {
-		padding: $smallSpacing 10px;
+		margin-bottom: $smallSpacing;
 	}
 }

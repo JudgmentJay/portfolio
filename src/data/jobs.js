@@ -50,7 +50,7 @@ module.exports = [
 	{
 		title: 'Senior Software Engineer',
 		company: 'Southwest Airlines',
-		description: 'Frontend-focused work for Southwest Airlines. HTML, SASS, JavaScript, TypeScript, React, Jest.',
+		description: 'Frontend-focused work for Southwest Airlines. HTML, SASS, JavaScript, TypeScript, React, Jest, Mocha, prompt engineering (Amazon Q).',
 		startDate: 'July 2023',
 		endDate: 'Present',
 		img: 'job_southwest'

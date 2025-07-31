@@ -20,6 +20,7 @@ const Projects = () => {
 						return (
 							<ProjectTile
 								title={project.title}
+								tech={project.tech}
 								url={project.url}
 								imgName={project.imgName}
 								testId={`project-${i}`}

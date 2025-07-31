@@ -45,8 +45,10 @@ const Skills = () => {
 					<h4 className={styles.header}>Strengths</h4>
 					<ul>
 						<li>Writing efficient, modular, reusable code</li>
-						<li>High productivity/bandwidth</li>
+						<li>Always aiming for 100% test coverage</li>
+						<li>High velocity without sacrificing quality</li>
 						<li>Attention to detail</li>
+						<li>Comfortable with AI / prompt engineering</li>
 						<li>Adhering to industry/team standards</li>
 						<li>Finding ways to optimize performance</li>
 						<li>Avoiding/fixing cross-browser compatibility issues</li>

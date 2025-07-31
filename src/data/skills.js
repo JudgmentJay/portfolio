@@ -10,11 +10,11 @@ module.exports = {
 		},
 		{
 			skill: 'react',
-			level: 85
+			level: 90
 		},
 		{
 			skill: 'javascript',
-			level: 80
+			level: 85
 		}
 	],
 	secondary: [
@@ -23,16 +23,20 @@ module.exports = {
 			level: 80
 		},
 		{
-			skill: 'node/express',
+			skill: 'testing',
 			level: 70
 		},
 		{
-			skill: 'email development',
-			level: 70
+			skill: 'node/express',
+			level: 60
 		},
 		{
 			skill: 'graphql',
-			level: 60
+			level: 50
+		},
+		{
+			skill: 'prompt engineering',
+			level: 50
 		}
 	]
 }
